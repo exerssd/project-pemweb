@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>VioletStore – Top Up Robux Murah & Terpercaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Ikon permata (dipakai ulang lewat <use>) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="g" viewBox="0 0 32 32">
+        <path d="M16 2l12 7v14l-12 7L4 23V9z" fill="#8b45f5" />
+        <path d="M16 2l12 7-12 7L4 9z" fill="#c4a1ff" />
+        <path d="M16 16v14L4 23V9z" fill="#6d28d9" />
+      </symbol>
+    </svg>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="#top"
+          ><svg width="30" height="30" viewBox="0 0 32 32">
+            <use href="#g" /></svg
+          >VIOLET<b>STORE</b></a
+        >
+        <nav>
+          <a href="#produk">Top Up RBX</a><a href="#game">Game</a
+          ><a href="#rank">Leaderboard</a><a href="#pesanan">Pesanan Saya</a
+          ><a href="#bayar">Pembayaran</a
+          ><a href="https://wa.me/6280000000000" target="_blank" rel="noopener"
+            >Chat Admin</a
+          >
+        </nav>
+        <button class="ibtn" id="th" aria-label="Ganti tema">🌓</button>
+      </div>
+    </header>
+
+    <!-- ===== KONTEN UTAMA ===== -->
+    <main id="top">
+      <!-- Hero + flash sale -->
+      <div class="hero">
+        <div class="wrap">
+          <div>
+            <span class="pill"
+              ><i class="dot"></i>Stok tersedia · Proses instan 24/7</span
+            >
+            <h1>THE CHEAPEST <span>ROBUX STORE!</span></h1>
+            <p class="lead">
+              Perkuat dan perbagus karakter Roblox kamu dengan top up Robux dan
+              item game favorit. Aman, murah, bergaransi, dan pelayanan super
+              cepat.
+            </p>
+            <div class="cta">
+              <button class="btn p" data-o="p0">💎 Top Up Robux</button
+              ><a class="btn o" href="#game">Lihat Semua Game</a>
+            </div>
+            <div class="stats">
+              <div><b>27.400+</b><small>Transaksi selesai</small></div>
+              <div><b>4,9 / 5</b><small>Rating pelanggan</small></div>
+              <div><b>Sejak 2018</b><small>Terpercaya</small></div>
+            </div>
+          </div>
+          <div class="flash">
+            <svg class="gem" viewBox="0 0 32 32"><use href="#g" /></svg>
+            <div style="font-weight: 700; font-size: 22px">
+              🔥 SEDANG FLASH SALE
+            </div>
+            <p style="color: #cdbfe8; font-size: 14px">
+              Penawaran terbatas! Berlaku sampai:
+            </p>
+            <div class="cd">
+              <div><b id="h">00</b><small>JAM</small></div>
+              <div><b id="m">00</b><small>MENIT</small></div>
+              <div><b id="s">00</b><small>DETIK</small></div>
+            </div>
+            <button class="btn p" data-o="p0" style="width: 100%">
+              Beli Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pilihan produk -->
+      <section id="produk">
+        <div class="wrap">
+          <div class="h2">
+            <h2>Pilihan Produk</h2>
+            <span class="sub">Semua pesanan diproses instan</span>
+          </div>
+          <div class="grid" id="gp"></div>
+        </div>
+      </section>
+
+      <!-- Top up in-game -->
+      <section id="game" style="background: var(--surface-2)">
+        <div class="wrap">
+          <div class="h2">
+            <h2>Top Up In-Game Roblox</h2>
+            <input
+              class="search"
+              id="q"
+              placeholder="Cari game…"
+              aria-label="Cari game"
+            />
+          </div>
+          <div class="grid" id="gg"></div>
+        </div>
+      </section>
+
+      <!-- Leaderboard -->
+      <section id="rank">
+        <div class="wrap">
+          <div class="h2">
+            <h2>🏆 Leaderboard</h2>
+            <span class="sub">Pelanggan teratas</span>
+          </div>
+          <div class="tabs" id="tb">
+            <button class="on" data-t="0">Harian</button
+            ><button data-t="1">Mingguan</button
+            ><button data-t="2">Bulanan</button>
+          </div>
+          <div class="lb" id="lb"></div>
+        </div>
+      </section>
+
+      <!-- Keunggulan -->
+      <section style="background: var(--surface-2)">
+        <div class="wrap">
+          <div class="h2"><h2>Aman, Cepat, dan Transparan</h2></div>
+          <div class="feat">
+            <div>
+              <i>🛡️</i><b>Aman &amp; bergaransi</b>
+              <p>Transaksi terlindungi dengan garansi pengisian.</p>
+            </div>
+            <div>
+              <i>⚡</i><b>Proses super cepat</b>
+              <p>Pesanan masuk dalam hitungan menit, setiap hari.</p>
+            </div>
+            <div>
+              <i>💜</i><b>Harga termurah</b>
+              <p>Top up Robux dengan harga paling bersahabat.</p>
+            </div>
+            <div>
+              <i>🧾</i><b>Invoice lengkap</b>
+              <p>Setiap transaksi dilengkapi invoice asli.</p>
+            </div>
+            <div>
+              <i>💬</i><b>Respon 24/7</b>
+              <p>Admin siap membantu kapan saja kamu butuh.</p>
+            </div>
+            <div>
+              <i>⭐</i><b>Testimoni asli</b>
+              <p>Ribuan review dari pelanggan yang puas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metode pembayaran -->
+      <section id="bayar">
+        <div class="wrap">
+          <div class="h2"><h2>Metode Pembayaran</h2></div>
+          <div class="pay" id="py"></div>
+        </div>
+      </section>
+
+      <section id="pesanan" style="background: var(--surface-2)">
+        <div class="wrap">
+          <div class="h2">
+            <div>
+              <h2>Pesanan Saya</h2>
+              <p class="sub">Lihat status terbaru pesanan yang terhubung ke akun Anda.</p>
+            </div>
+          </div>
+          <p id="orders-loading" class="sub" role="status">Memeriksa akun…</p>
+          <div id="orders-auth" class="order-auth" hidden>
+            <p id="orders-auth-message" class="sub"></p>
+            <form id="orders-auth-form">
+              <div id="orders-name-wrap" hidden>
+                <input class="in" id="orders-name" name="name" placeholder="Nama lengkap" autocomplete="name">
+              </div>
+              <input class="in" id="orders-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+              <input class="in" id="orders-password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+              <p id="orders-auth-error" class="order-error" role="alert" hidden></p>
+              <div class="orders-actions">
+                <button class="btn p" id="orders-auth-submit" type="submit">Masuk</button>
+                <button class="btn order-secondary" id="orders-auth-toggle" type="button">Buat akun baru</button>
+              </div>
+            </form>
+          </div>
+          <div id="orders-panel" hidden>
+            <div class="orders-toolbar">
+              <p id="orders-message" class="sub" role="status"></p>
+              <div class="orders-actions">
+                <button class="btn p" id="orders-refresh" type="button">Muat ulang</button>
+                <button class="btn order-secondary" id="orders-logout" type="button">Keluar</button>
+              </div>
+            </div>
+            <div id="orders-list" class="orders-grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="cols">
+          <div>
+            <div class="logo" style="color: #fff; margin-bottom: 10px">
+              <svg width="26" height="26" viewBox="0 0 32 32">
+                <use href="#g" /></svg
+              >VIOLET<b>STORE</b>
+            </div>
+            <p>
+              VioletStore adalah penyedia layanan pembelian item dan mata uang
+              digital game secara independen. Kami tidak memiliki hubungan
+              kemitraan, dukungan, maupun sponsor dari Roblox Corporation.
+              Seluruh nama dan merek dagang adalah hak milik masing-masing
+              pemegangnya.
+            </p>
+          </div>
+          <div>
+            <h4>Tentang Kami</h4>
+            <a href="#">Kebijakan Privasi &amp; Syarat Ketentuan</a
+            ><a href="#">Kebijakan Pengembalian Dana</a><a href="#">FAQ</a>
+          </div>
+          <div>
+            <h4>Ikuti Kami</h4>
+            <a href="#">Instagram</a
+            ><a href="https://wa.me/6280000000000">WhatsApp</a
+            ><a href="#">TikTok</a><a href="#">Discord</a>
+          </div>
+        </div>
+        <div class="copy">© 2026 VioletStore. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Tombol chat mengambang -->
+    <a
+      class="wa"
+      href="https://wa.me/6280000000000"
+      target="_blank"
+      rel="noopener"
+      >💬 Chat Admin</a
+    >
+
+    <!-- ===== POPUP TOP UP ===== -->
+    <div class="ov" id="ov">
+      <div class="md" role="dialog" aria-modal="true" aria-labelledby="mt">
+        <button class="ibtn x" id="cl" aria-label="Tutup">✕</button>
+        <h3 id="mt"></h3>
+        <p class="sub" id="ms"></p>
+        <div id="fm">
+          <div class="step">
+            <b><i>1</i>Pilih nominal</b>
+            <div class="opts" id="po"></div>
+          </div>
+          <div class="step">
+            <b><i>2</i>Username Roblox</b
+            ><input
+              class="in"
+              id="un"
+              placeholder="contoh: PurplePlayer123"
+              autocomplete="off"
+            />
+          </div>
+          <div class="step">
+            <b><i>3</i>Metode pembayaran</b>
+            <div class="opts" id="pm"></div>
+          </div>
+          <div class="tot"><span>Total bayar</span><b id="tt">Rp0</b></div>
+          <p
+            id="order-error"
+            role="alert"
+            hidden
+            style="color: #dc2626; margin-top: 12px"
+          ></p>
+          <button
+            class="btn p"
+            id="go"
+            style="width: 100%; margin-top: 14px"
+            disabled
+          >
+            Bayar Sekarang
+          </button>
+          <div id="customer-auth" hidden style="margin-top: 20px">
+            <p class="sub" id="auth-message">
+              Silakan masuk atau buat akun pelanggan untuk melanjutkan pesanan.
+              Untuk membuat akun, isi nama.
+            </p>
+            <div style="margin-top: 12px">
+              <input
+                class="in"
+                id="auth-name"
+                placeholder="Nama lengkap (untuk akun baru)"
+                autocomplete="name"
+              />
+            </div>
+            <input
+              class="in"
+              id="auth-email"
+              type="email"
+              placeholder="Email"
+              autocomplete="email"
+              style="margin-top: 12px"
+            />
+            <input
+              class="in"
+              id="auth-password"
+              type="password"
+              placeholder="Password (minimal 8 karakter)"
+              autocomplete="current-password"
+              style="margin-top: 12px"
+            />
+            <p
+              id="auth-error"
+              role="alert"
+              hidden
+              style="color: #dc2626; margin-top: 12px"
+            ></p>
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <button class="btn p" id="auth-login" type="button">Masuk</button>
+              <button class="btn o" id="auth-register" type="button">
+                Buat Akun
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="ok" hidden style="text-align: center; padding: 20px 0">
+          <div style="font-size: 52px">✅</div>
+          <h3>Pesanan dibuat!</h3>
+          <p class="sub" id="oi" style="margin-top: 6px"></p>
+          <button class="btn p" id="ok2" style="margin-top: 18px">
+            Selesai
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript (urutan penting) -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

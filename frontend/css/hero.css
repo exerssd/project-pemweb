@@ -1,0 +1,125 @@
+/* ===== Hero & flash sale ===== */
+
+.hero {
+  background: radial-gradient(900px 420px at 80% -10%,#7c3aed66,transparent 60%),radial-gradient(600px 400px at 0% 100%,#4c1d9588,transparent 60%),#07040d;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 36px;
+  align-items: center;
+  padding: 64px 18px 72px;
+}
+
+.pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  background: #ffffff12;
+  border: 1px solid #ffffff22;
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-size: 13px;
+  color: #e6dbff;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 4px #4ade8033;
+}
+
+h1 {
+  font-size: clamp(30px,5vw,52px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin: 18px 0 14px;
+}
+
+h1 span {
+  background: linear-gradient(90deg,#c4a1ff,#fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lead {
+  color: #cdbfe8;
+  max-width: 520px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  margin: 26px 0;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.stats b {
+  display: block;
+  font-size: 22px;
+}
+
+.stats small {
+  color: #b9a8d9;
+}
+
+.flash {
+  background: linear-gradient(160deg,#ffffff18,#ffffff08);
+  border: 1px solid #ffffff2a;
+  border-radius: 24px;
+  padding: 28px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.gem {
+  width: 110px;
+  margin: 0 auto 6px;
+  display: block;
+  filter: drop-shadow(0 12px 30px #8b45f5aa);
+  animation: fl 4s ease-in-out infinite;
+}
+
+@keyframes fl {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.cd {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.cd div {
+  background: #00000066;
+  border: 1px solid #ffffff22;
+  border-radius: 12px;
+  min-width: 62px;
+  padding: 8px 4px;
+}
+
+.cd b {
+  font-size: 26px;
+  display: block;
+  line-height: 1.2;
+}
+
+.cd small {
+  font-size: 11px;
+  color: #b9a8d9;
+}

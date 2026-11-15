@@ -1,0 +1,111 @@
+/* ===== Popup top up ===== */
+
+.ov {
+  position: fixed;
+  inset: 0;
+  background: #000000b3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 40;
+  backdrop-filter: blur(4px);
+}
+
+.ov.on {
+  display: flex;
+}
+
+.md {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  width: 100%;
+  max-width: 560px;
+  max-height: 92vh;
+  overflow: auto;
+  padding: 24px;
+}
+
+.md h3 {
+  font-size: 20px;
+}
+
+.step {
+  margin-top: 18px;
+}
+
+.step > b {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.step > b i {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  font-style: normal;
+  font-size: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.opts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(125px,1fr));
+  gap: 10px;
+}
+
+.opt {
+  border: 1.5px solid var(--line);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  font: 600 13px Poppins,system-ui,sans-serif;
+  text-align: left;
+}
+
+.opt small {
+  display: block;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.opt.on {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+.opt.on small {
+  color: #eadcff;
+}
+
+.tot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: var(--surface-2);
+  border-radius: 14px;
+}
+
+.tot b {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.x {
+  float: right;
+  background: var(--surface-2);
+  color: var(--text);
+}

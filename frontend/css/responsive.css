@@ -1,0 +1,45 @@
+/* ===== Responsif & aksesibilitas ===== */
+
+@media (max-width: 860px) {
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+
+  footer .cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill,minmax(145px,1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    height: auto;
+    padding: 10px 18px;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gem {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
